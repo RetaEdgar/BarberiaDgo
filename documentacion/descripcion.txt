@@ -1,0 +1,17 @@
+Nombre del proyecto: BarberiaDgo
+
+Problema:
+Muchos clientes de barberías pierden tiempo esperando turno o no conocen los
+servicios y precios antes de llegar. La barbería tampoco tiene un medio digital
+para darse a conocer y atraer nuevos clientes.
+
+Objetivo:
+Crear una página web promocional sencilla que presente la barbería, sus
+servicios, precios y datos de contacto, para atraer clientes y facilitar que
+agenden su cita.
+
+Descripción:
+BarberiaDgo es una página web promocional para una barbería. Muestra el nombre
+del negocio, una breve presentación, los servicios que ofrece (corte de cabello,
+arreglo de barba, afeitado clásico) y la información de contacto. El proyecto se
+desarrollará por versiones usando Git y GitHub para registrar cada cambio.
