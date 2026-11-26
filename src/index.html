@@ -4,6 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarberiaDgo</title>
+    <style>
+        :root {
+            --negro: #1b1b1b;
+            --carbon: #2a2a2a;
+            --crema: #f4f1ea;
+            --dorado: #c9a24b;
+            --rojo: #b3202a;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--crema);
+            color: var(--negro);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--negro);
+            color: var(--crema);
+            text-align: center;
+            padding: 48px 16px 40px;
+            border-bottom: 6px solid var(--dorado);
+        }
+        header h1 {
+            font-family: Georgia, serif;
+            font-size: 3rem;
+            margin: 0;
+            color: var(--dorado);
+        }
+        header h2 { margin: 8px 0 0; font-weight: normal; letter-spacing: 2px; }
+        main { max-width: 960px; margin: 0 auto; padding: 32px 16px; }
+        section { margin-bottom: 40px; }
+        h2.titulo {
+            font-family: Georgia, serif;
+            color: var(--negro);
+            border-left: 6px solid var(--rojo);
+            padding-left: 12px;
+        }
+        .intro { text-align: center; font-size: 1.1rem; }
+        .banner {
+            display: block;
+            width: 100%;
+            max-width: 960px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+        }
+        .boton {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 14px 32px;
+            background: var(--rojo);
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background 0.2s;
+        }
+        .boton:hover, .boton:focus { background: var(--dorado); color: var(--negro); }
+        .beneficios {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        .beneficios li {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 4px solid var(--dorado);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        .beneficios strong { display: block; color: var(--rojo); margin-bottom: 6px; }
+        .contacto {
+            background: var(--carbon);
+            color: var(--crema);
+            padding: 24px;
+            border-radius: 12px;
+        }
+        .contacto h2.titulo { color: var(--dorado); }
+        .contacto p { margin: 6px 0; }
+        footer {
+            background: var(--negro);
+            color: var(--crema);
+            text-align: center;
+            padding: 16px;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -12,28 +102,45 @@
     </header>
 
     <main>
-        <section>
+        <section class="intro">
             <p>En BarberiaDgo ofrecemos cortes de cabello modernos y clásicos, arreglo y
             perfilado de barba, y afeitado tradicional con toalla caliente. Nuestros barberos
             cuidan cada detalle para que salgas luciendo y sintiéndote mejor.</p>
             <p><strong>¡Visítanos y agenda tu cita hoy mismo!</strong> Descubre por qué somos
             la barbería favorita de Durango.</p>
+            <a href="#contacto" class="boton">Agenda tu cita</a>
         </section>
 
-        <img src="banner.svg" alt="Banner de BarberiaDgo con un poste de barbero" width="600">
+        <section>
+            <img class="banner" src="banner.svg" alt="Banner de BarberiaDgo con un poste de barbero">
+        </section>
 
         <section>
-            <h2>¿Por qué elegir BarberiaDgo?</h2>
+            <h2 class="titulo">¿Por qué elegir BarberiaDgo?</h2>
             <p>Sabemos que tu tiempo y tu imagen son importantes. Por eso combinamos barberos
             con experiencia, productos de calidad y un ambiente cómodo para que cada visita
             valga la pena.</p>
-            <ul>
-                <li><strong>Citas sin esperas:</strong> agenda tu horario y te atendemos a tiempo.</li>
-                <li><strong>Barberos expertos:</strong> dominamos cortes clásicos, fades y diseños modernos.</li>
-                <li><strong>Precios accesibles:</strong> calidad profesional a un precio justo.</li>
-                <li><strong>Higiene garantizada:</strong> herramientas desinfectadas en cada servicio.</li>
+            <ul class="beneficios">
+                <li><strong>Citas sin esperas</strong> Agenda tu horario y te atendemos a tiempo.</li>
+                <li><strong>Barberos expertos</strong> Dominamos cortes clásicos, fades y diseños modernos.</li>
+                <li><strong>Precios accesibles</strong> Calidad profesional a un precio justo.</li>
+                <li><strong>Higiene garantizada</strong> Herramientas desinfectadas en cada servicio.</li>
             </ul>
+            <p style="text-align:center"><a href="#contacto" class="boton">Conoce más</a></p>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2 class="titulo">Contacto</h2>
+            <p><strong>Dirección:</strong> Av. 20 de Noviembre #123, Centro, Durango, Dgo.</p>
+            <p><strong>Teléfono:</strong> (618) 555-0123</p>
+            <p><strong>Correo:</strong> contacto@barberiadgo.com</p>
+            <p><strong>Horario:</strong> Lunes a sábado, 10:00 a 20:00 hrs</p>
+            <p><strong>Redes sociales:</strong> @BarberiaDgo</p>
         </section>
     </main>
+
+    <footer>
+        &copy; 2026 BarberiaDgo · Página promocional de práctica
+    </footer>
 </body>
 </html>
