@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="Banner de BarberiaDgo">
+  <rect width="1200" height="360" fill="#1b1b1b"/>
+  <g transform="translate(110 60)">
+    <rect x="0" y="20" width="70" height="200" rx="35" fill="#f4f1ea"/>
+    <clipPath id="poste"><rect x="0" y="20" width="70" height="200" rx="35"/></clipPath>
+    <g clip-path="url(#poste)">
+      <path d="M-40 40 L110 -10 L110 20 L-40 70Z M-40 110 L110 60 L110 90 L-40 140Z M-40 180 L110 130 L110 160 L-40 210Z M-40 250 L110 200 L110 230 L-40 280Z" fill="#b3202a"/>
+      <path d="M-40 75 L110 25 L110 40 L-40 90Z M-40 145 L110 95 L110 110 L-40 160Z M-40 215 L110 165 L110 180 L-40 230Z" fill="#1f4e8c"/>
+    </g>
+    <rect x="-8" y="0" width="86" height="24" rx="8" fill="#c9a24b"/>
+    <rect x="-8" y="216" width="86" height="24" rx="8" fill="#c9a24b"/>
+  </g>
+  <text x="300" y="165" font-family="Georgia, serif" font-size="78" font-weight="bold" fill="#c9a24b">BarberiaDgo</text>
+  <text x="304" y="225" font-family="Arial, sans-serif" font-size="32" fill="#f4f1ea">Cortes · Barba · Afeitado clásico</text>
+</svg>
